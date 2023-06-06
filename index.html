@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="Style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="sub-container">
+                <!-- Total amount Budget code  -->
+                <div class="total-amount-box">
+                    <h3>Budget</h3>
+                    <p class="hidden error" id="budget-error">
+                        Empty or Negative value not accepted
+                    </p>
+                    <input
+                     type="number"
+                     id="total-amount"
+                     placeholder="Enter Total Amount"/>
+                     <button class="submit"
+                     id="total-amount-button">Set Your Budget</button>
+                </div>
+
+                <!-- Expense code here-->
+                <div class="user-amount-box">
+                    <h3>Expenses</h3>
+                    <p class="hidden error"
+                    id="product-error">
+                      Value Cannot Empty
+                    </p>
+                    <input
+                    type="text"
+                    class="product-name"
+                    id="product-name"
+                    placeholder="Enter name of product"/>
+
+                    <input 
+                    type="number"
+                    id="user-amount"
+                    placeholder="Enter cost of product"/>
+
+                    <button class="submit"
+                    id="check-amount">Check Amount</button>
+                </div>
+            </div>
+            <!-- Output -->
+            <div class="output-box flex-space">
+                <div>
+                    <p>Total Budget</p>
+                    <span id="amount">0</span>
+                </div>
+                <div>
+                    <p>Expenses</p>
+                    <span id="expenditure-value">0</span>
+                </div>
+                <div>
+                    <p>Balance</p>
+                    <span id="balance-amount">0</span>
+                </div>
+        </div>
+        <!-- List of EXpenses -->
+        <div class="list">
+            <h3>Expense list</h3>
+            <div class="list-box" id="list"></div>
+        </div>
+        <script src="jscript.js"></script>
+    </div>
+</body>
+</html>

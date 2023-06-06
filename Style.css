@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #f7f9fd;
+}
+.wrapper {
+    width: 90%;
+    font-size: 15px;
+    max-width: 43.75rem;
+    margin: 1em auto;
+}
+.container {
+    width: 100%;
+}
+.sub-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper h3 {
+    color: #363d55;
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+.container input {
+    display: block;
+    width: 100%;
+    padding: 0.6em 0.3em;
+    border: 1px solid #d0d0d0;
+    border-radius: 0.3em;
+    color: #c91374;
+    outline: none;
+    font-weight: 400;
+    margin-bottom: 0.6em;
+}
+.container input:focus {
+    border: 1px solid #c91374;
+}
+.total-amount-box ,
+.user-amount-box {
+    background-color: #f7f9fd;
+    padding: 1.25em 0.9em;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgba(10, 0, 29, 0.06);
+    
+}
+.output-box {
+    background-color: #c91374;
+    color: #ffffff;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgba(10, 0, 29, 0.06);
+    margin: 2em 0;
+    padding: 1.2em;
+}
+.output-box p {
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+.output-box span {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    color: #e5e5e5;
+}
+.submit {
+    font-size: 1em;
+    margin-top: 0.8em;
+    background-color: #c91374;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 0.6em 1.2em;
+    border-radius:0.3em ;
+    cursor: pointer;
+}
+.list {
+    background-color: #ffffff;
+    padding: 1.8em 1.2em;
+    box-shadow: 0 0.6em 1.2em rgb(28, 0,80 , 0.09 );
+    border-radius: 0.6em;
+}
+.sublist-content {
+    width: 100%;
+    border-left: 0.3em solid #c91374;
+    margin-bottom: 0.6em;
+    padding: 0.5em 0;
+}
+.product {
+    font-weight: 500;
+    margin-left: 1.5em;
+    color: #c91374;
+}
+.amount {
+    color: #363d55;
+    margin-left: 20%;
+}
+.icons-container {
+    width: 5em;
+    margin: 1.2em;
+    align-items: center;
+}
+.product-name{
+    margin-bottom: 1em;
+}
+.hidden {
+    display: none;
+}
+.error {
+    color: red;
+}
+.edit {
+    margin-left: auto;
+}
+.edit, 
+.delete {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #c91374;
+    cursor: pointer;
+    margin-right: 1.5em;
+}
